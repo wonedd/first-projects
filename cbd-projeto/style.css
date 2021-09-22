@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:Monospace;
+    background-color:#1C1C1C;
+    background-image: url(back.jpg);
+    
+    background-position: center;
+}
+
+.title{
+    color: whitesmoke;
+}
+.dimensions{
+    width: 190px;
+    float: right;
+   
+
+    
+   
+}
+
+.image{
+    padding-right: 20%;
+    
+   
+
+}
+    
+.container{
+font-size: 20pt;
+padding-left: 20%;
+color: whitesmoke;
+
+}
+
+input{
+    width: 220px;
+    height: 70px;
+    font-size: 15pt;
+    border: none;
+    border-radius: 10px;
+    background-color: 	#3CB371;
+    color:#fff;
+    cursor:pointer;
+}
+
+.call-to-action{
+    padding-top: 50px;
+}
+
