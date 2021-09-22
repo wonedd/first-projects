@@ -1,0 +1,108 @@
+
+
+body{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	background-image: url(img1.jpg);
+	background-position: center;
+	background-attachment: fixed;
+	height: 100%;
+	
+	
+}
+
+.container{
+	margin: auto;
+	width: 960px;
+}
+
+.top-bar{
+	width:100%;
+	height: 25px;
+	background: #141414;
+	color: #888;
+	line-height: 30px;
+	position: fixed;
+}
+
+.top-bar .player-controls{
+	float: left;
+}
+
+.top-bar .player-contorls span{
+	padding: 0 5px;
+	-webkit-transition: all linear 0.2s;
+}
+
+.top-bar .player-display{        /** TIRAR DÚVIDAS SOBRE ESSA LINHA **/
+	float:left;         
+	float: right;
+	margin-left: 50px; 
+	line-height: 25px;    
+}
+
+.top-bar .player-display .player-current-track{
+	color:white;
+}
+
+.top-bar .player{
+	float: left;
+}
+
+.top-bar .player-timeline{
+	float: left;
+	max-width: 200px;
+	width: 200px;
+	height: 4px;
+	margin-top: 13px;
+	background:#555;
+	margin-left: 20px;
+
+}
+
+.top-bar .player-timeline-control{
+	height: 4px;
+	background: #999;
+	
+}
+
+.button-play{
+	height: 20px;
+	width: 20px;
+	background-image: url('root/play-button.jpg');
+
+}
+
+i{
+	cursor: pointer;
+}
+
+#gif{
+	height: 150px;
+	width: 150px;
+	padding-top: 20%;
+	padding-left: 40%;
+	border-radius: 30px;
+}
+
+
+.side-bar{
+	border: 1px solid #000;
+	margin-right: 80%
+	margin-bottom:80%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

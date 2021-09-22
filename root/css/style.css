@@ -1,0 +1,25 @@
+body{
+    background-color: cadetblue;
+    font-family: sans-serif;
+    height: 100%;
+}
+
+#entrar{
+    border: none;
+    border-radius: 5px;
+    color: whitesmoke;
+    background-color:rgba(128, 128, 128, 0.8);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.548);
+    line-height: 30px;
+    cursor: pointer;
+    
+}
+
+a{
+    height: 30px;
+    width: 30px;
+    margin-left: 45%;
+    text-decoration: none;
+    
+}
+
