@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <style>
+        
+
+        .container{
+          font-family: sans-serif;
+        }
+        #add-btn{
+            margin-left: 10px;
+            height: 26px;
+
+            
+        }
+        #valor{
+            font-weight: bold;
+            font-size:15pt;
+        }
+
+        input{
+            height: 20px;
+        }
+
+        .btn2{
+            float:right;
+            margin-right:600px;
+            margin-top: -20px;
+            font-weight: bold;
+            font-size: 7pt;
+        }
+        
+        #lista{
+            font-family: sans-serif;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h2>Lista de tarefas</h2>
+    <input type="text" id="conteudo"><button type="button" id="add-btn"><span id="valor">+</span></button>
+    </div>
+    <ul id="lista">
+        
+    </ul>
+    
+    
+    <script>
+        
+        var btn = document.getElementById("add-btn");
+        var lista = document.getElementById('lista');
+        
+        
+        
+
+        function adicionarLista(){
+            var input = document.getElementById('conteudo')
+            var valor = conteudo.value;
+            var items = document.createElement('li')
+            var content = document.createTextNode(valor)
+            var newBt = document.createElement('button');
+           
+           
+            newBt.setAttribute('type', 'button');
+            newBt.classList.add('btn2')
+            newBt.appendChild(document.createTextNode('x'));
+             
+            items.appendChild(content)
+            lista.appendChild(items)
+            lista.appendChild(newBt)
+            
+            newBt.addEventListener('click', function(){
+               items.style.display = 'none'
+               newBt.style.display = 'none'
+      })
+  }
+
+   btn.addEventListener('click', adicionarLista, false);      
+       
+            
+     
+        
+       
+
+
+
+    </script>
+  
+</body>
+</html>
