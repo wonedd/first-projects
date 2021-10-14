@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <style>
+            body{
+                font-family: sans-serif;
+                margin: 0;
+                padding:0;
+                background-color:green;
+                color:white;
+            }
+
+            .container{
+               margin: 20%;
+               border: 3px solid white;
+               padding: 50px;
+               border-radius: 2rem;
+               
+            }
+
+            button:hover{
+                background-color:rgba(231, 216, 216, 0.781);
+                box-shadow: none;
+            }
+
+            button{
+                box-shadow: 2px 2px rgba(0, 0, 0, 0.253);
+                   border: none;
+                   border-radius: 2rem;
+                   width:100px;
+                   cursor:pointer;
+                   
+            }
+
+            
+        </style>
+        <title>Stopwatch</title>
+    </head>
+    <body>
+        <div class="container">
+
+            <h1>Stopwatch</h1>
+            <p><span id="seconds">00</span>:<span id ="milisec">00</span></p>
+
+                <button id="btn-start">Start</button> 
+                <button id="btn-stop">Stop</button> 
+                <button id="btn-reset">Reset</button> 
+            </div>
+        
+        
+         <script>
+            window.onload = function() {
+           
+             var displaySec = document.getElementById('seconds')
+             var displayMilisec = document.getElementById('milisec')
+             var sec = '00';
+             var milisec = '00';
+             var btn_Start = document.getElementById('btn-start')
+             var btn_Stop = document.getElementById('btn-stop')
+             var btn_Reset = document.getElementById('btn-reset')
+             var Interval;
+
+               
+                    
+               
+                btn_Start.addEventListener('click', function(){
+                    
+                    clearInterval(Interval);
+                    Interval = setInterval(startTimer, 10);
+                    function startTimer(){
+                           
+                        milisec ++;
+
+                        if(milisec <= 9){
+                            displayMilisec.innerHTML = '0'+ milisec;
+                        }
+
+                        if(milisec > 9){
+                            displayMilisec.innerHTML = milisec;
+                        }
+
+                        if(milisec > 99){
+                            console.log('seconds');
+                            sec++;
+                            displaySec.innerHTML = '0' + sec;
+                            milisec = 0;
+                            displayMilisec.innerHTML = '0' + 0;
+                        }
+
+                        if(sec > 9){
+                            displaySec.innerHTML = sec;
+                        }
+                    }
+                })       
+
+                
+                 btn_Stop.addEventListener('click', function(){
+                    clearInterval(Interval);
+                 })
+
+                 btn_Reset.addEventListener('click',function(){
+                    clearInterval(Interval);
+                    var sec = '00';
+                    var milisec = '00';
+                    displaySec.innerHTML = sec
+                    displayMilisec.innerHTML = milisec
+                })
+
+        }
+            
+             
+
+                
+             
+            
+
+        
+        
+
+            
+        </script>
+    </body>
+</html>
+        
+        
+       
