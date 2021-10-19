@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Animate</title>
+</head>
+<body>
+<h3>PRESS ON THE CENTER</h3>
+    
+    
+    <h2>
+        
+        <a>O</a><a>l</a><a>á</a>
+       
+    </h2>
+
+    <div id="circle"><button id="mini-circle"></button></div>
+    <script>
+        const btn = document.getElementById('mini-circle')
+        const doc = document.getElementsByTagName('body')
+
+        btn.addEventListener('click',function(){
+            doc.addClass('new');
+        })
+    </script>
+</body>
+</html>

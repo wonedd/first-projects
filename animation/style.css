@@ -1,0 +1,126 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: rgba(0, 0, 0, 0.801);
+    color: white;
+    display:flex;
+    justify-content:center;
+    
+}
+
+@keyframes letras{
+    from{
+       top:0;
+    }
+    to{
+        top:20px;
+        font-size: 0;
+    }
+}
+
+h2{ 
+    padding-top:20%;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 40pt;
+    letter-spacing:2px;
+    cursor: pointer;
+    display: flex;
+   
+    
+}
+
+a{
+    position: relative;
+    
+}
+
+a:hover{
+    animation: letras 1s 0s linear  normal;
+}
+
+@keyframes girar{
+    from{
+        
+        transform:rotateY(360deg);
+    }
+
+    to{
+        
+        transform:rotateY(-360deg);
+
+    }
+}
+
+#circle {
+    transform-style: preserve-3d;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top:30%;
+    position:relative;
+    left: -100px;
+    background-color:rgba(241, 231, 231, 0.438);
+    opacity: 0.2;
+    border-radius: 50px;
+    transition: all .5s;
+    animation:girar 10s linear infinite;
+
+    
+}
+
+#mini-circle {
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color:white;
+    margin-top:40%;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+
+h3{
+    display: flex;
+    position:relative;
+    right: -10%;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 10pt;
+    letter-spacing:2px;
+    cursor: pointer;
+    visibility: hidden;
+    animation: hide 3s 2s 1 alternate;
+    transition: all 1s;
+}
+
+
+@keyframes hide{
+    from{
+        visibility:hidden;
+        color:white;
+        opacity:0;
+        top:0;
+    }
+
+    to{
+        visibility:visible;
+        opacity:1;
+        color:yellow;
+        top: 50px;
+}
+
+}
+
+#mini-circle:hover{
+    background-color:yellow;
+}
+
+.new{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color:rgba(241, 231, 231, 0.438);
+    transition:all 0.5s;
+}
+
