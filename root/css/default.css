@@ -32,7 +32,7 @@ body{
 
 .top-bar .player-contorls span{
 	padding: 0 5px;
-	-webkit-transition: all linear 0.2s;
+	transition: all linear 0.2s;
 }
 
 .top-bar .player-display{        /** TIRAR DÚVIDAS SOBRE ESSA LINHA **/

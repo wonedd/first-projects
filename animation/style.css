@@ -124,3 +124,22 @@ h3{
     transition:all 0.5s;
 }
 
+@keyframes dance{
+    from{
+        top: 0;
+        
+    }
+
+
+    to{
+        top: 500px;
+        
+    }
+}
+
+
+#minhoca{
+    display: flex;
+    animation: dance linear infinite;
+    transition: 5s all;
+}

@@ -9,14 +9,14 @@ $(function() {
         $(this).click(function(){
           $('li').remove()
         })
-          
-      
-       
       })
+    })     
+  });         
+   
       
-    })   
+   
  
-}); 
+
 
 
 

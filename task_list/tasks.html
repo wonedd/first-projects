@@ -6,48 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de tarefas</title>
     <style>
-        
-
+        *{
+            color: #f6f6f6;
+        }
+        body{
+            color: #f6f6f6;
+            background-color: #010101e0;
+            height: 100%;
+            width: 100%;
+        }
         .container{
+          height: auto;
+          width:auto;
           font-family: sans-serif;
+          border:2px solid rgba(12, 179, 12, 0.74);
+          border-radius: 5px;
+          padding: 100px;
+          padding-bottom: 500px;
+          text-align: center;
+
         }
         #add-btn{
             margin-left: 10px;
-            height: 26px;
+            padding:5px 10px;
+            border:2px solid rgba(12, 179, 12, 0.74);
+            background-color: #010101e0;
+            border-radius: 5px;
 
             
         }
         #valor{
             font-weight: bold;
             font-size:15pt;
+            color:rgba(12, 179, 12, 0.74);
         }
 
         input{
-            height: 20px;
+            height: 28px;
+            width: 100px;
+            border:2px solid rgba(12, 179, 12, 0.74);
+            background-color:#010101e0;
+            border-radius: 5px;
         }
 
-        .btn2{
-            float:right;
-            margin-right:600px;
-            margin-top: -20px;
-            font-weight: bold;
-            font-size: 7pt;
-        }
+       
         
         #lista{
             font-family: sans-serif;
+            list-style: none;
+            
+
         }
+
+        li{
+            margin: auto;
+        }
+       
+        .btn2{
+           
+            display: flex;
+            margin: auto;
+            
+            
+        }
+
+     
        
     </style>
 </head>
 <body>
     <div class="container">
-    <h2>Lista de tarefas</h2>
+    <h2>TO DO</h2>
     <input type="text" id="conteudo"><button type="button" id="add-btn"><span id="valor">+</span></button>
-    </div>
     <ul id="lista">
         
     </ul>
+    
+    </div>
+   
     
     
     <script>
