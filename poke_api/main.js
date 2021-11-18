@@ -19,10 +19,11 @@ function main(){
     
     let num = url.split("/")
     let ids = num[6]
-    console.log(ids)
+  
 
       tabela.innerHTML += `
        <div class="container">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/`+ids+`.png"/>
             <p>`+element.name+`</p>
          
        </div>
