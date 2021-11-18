@@ -6,47 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body{
-            background-color:rgba(0, 0, 0, 0.397);
+            background-color: rgb(12, 12, 11);
+            background-image:url(pokedex.jpg);
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position-x:center;
             color:whitesmoke;
             font-family: sans-serif;
-            font-size: 15pt;
-        }
-        .container{
-           background-color: rgba(0, 0, 0, 0.397);
-           display: flex;
-           float: left;
-           width: 150px;   
-           height: 150px; 
-           margin: 60px;
-           margin-bottom: 2%;
-           border-radius: 10%;
-           text-align: center;
-           transform-style: preserve-3d;
-           animation:girar 15s linear infinite;
-           transition: all 1s;
-           box-shadow: 7px 7px rgba(0, 0, 0, 0.459);
+            width: 600px;
+            margin: auto;
+            padding-right: 0.7%;
+            padding-top: 197px;
           
         }
+        .container{
+           background-color: rgba(0, 0, 0, 0.103);
+           display: flex;
+           float: right;
+           width: 143px;   
+           height: 110px; 
+           text-align: center;
+           margin:1px;
+           border: 1px rgba(0, 0, 0, 0.664) solid;
+           cursor: pointer;
+          }
+           
 
-
-        @keyframes girar{
-    from{
-        
-        transform:rotateY(360deg);
-    }
-
-    to{
-        
-        transform:rotateY(-360deg);
-
-    }
-}
-
-        .container:hover{
-            background-color:rgba(0, 0, 0, 0.281);
-            animation: none;
+        p{
+         display: inline-block;
+         text-align: center;
+         font-size: 15pt;
+         margin-left: 2%;
+         margin-top: 0;
+         position: absolute;
+         color:#060606;
         }
-        
+    
+       .container:hover{
+            background-color:rgba(0, 0, 0, 0.281);
+            
+        }
+
+         
     </style>
     <title>Document</title>
 </head>
@@ -54,4 +55,8 @@
     <div id="tabela"></div>
     <script src="main.js"></script>
 </body>
-</html>
+</html>   
+
+        
+       
+  
